@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinks</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-blue-100 mt-[18px] mb-[18px] ml-[18px] mr-[18px] ">
+
+  <!-- search box -->
+<div class="flex items-center justify-center bg-blue-200 rounded-lg p-4 mt-4">
+  <div class="search_box flex gap-2">
+    <input type="text" id="search_input" placeholder="Search by name" class="input input-bordered input-sm w-60">
+    <button id="search_btn" class="btn btn-primary btn-sm">Search</button>
+  </div>
+</div>
+
+<!-- modal-container -->
+<div id="modal-container" class="hidden"></div>
+
+<!-- main cont` -->
+  <div id="main_cont" class="main_cont">
+
+
+
+
+    <div id="product_cont" class="product_cont">
+
+    </div>
+  </div>
+
+  <!-- cart_cont -->
+  <div id="cart_cont" class="cart_cont">
+    <h1 class="text-center mt-6 font-bold text-[30px] bg-blue-400 text-white">This is Cart</h1>
+    <hr>
+
+    <div id="cart_items" class="cart_items">
+
+      <div>
+        <hr>
+        <h1 class="mt-10 font-bold text-[25px] text-red-500">Total : <span id="total"></span></h1>
+      </div>
+
+    </div>
+
+
+
+<!-- js file -->
+    <script src="utility.js"></script>
+</body>
+
+</html>
