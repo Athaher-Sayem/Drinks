@@ -9,6 +9,8 @@ Payments are intentionally not implemented.
 
 See [`backend/README.md`](backend/README.md) for installation, API usage, tests, and deployment.
 See [`frontend/README.md`](frontend/README.md) for the connected storefront and browser checks.
+On `demo/general-store`, see [`demo/README.md`](demo/README.md) for the separate **100-product**
+example at **http://127.0.0.1:5176** and its `/admin` workspace. The reusable base is `e7dc132`.
 
 - API: FastAPI, Pydantic, SQLAlchemy, Alembic, PostgreSQL in production.
 - Storefront: React, TypeScript, Vite; **http://127.0.0.1:5173** during development.

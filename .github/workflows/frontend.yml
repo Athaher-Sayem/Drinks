@@ -2,9 +2,9 @@ name: Storefront checks
 
 on:
   push:
-    paths: ["frontend/**", "backend/**", ".github/workflows/frontend.yml"]
+    paths: ["frontend/**", "backend/**", "demo/**", ".github/workflows/frontend.yml"]
   pull_request:
-    paths: ["frontend/**", "backend/**", ".github/workflows/frontend.yml"]
+    paths: ["frontend/**", "backend/**", "demo/**", ".github/workflows/frontend.yml"]
 
 permissions:
   contents: read
@@ -55,4 +55,6 @@ jobs:
       - run: npm run test:e2e
         working-directory: frontend
       - run: npm run test:admin
+        working-directory: frontend
+      - run: npm run test:demo
         working-directory: frontend

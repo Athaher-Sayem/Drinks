@@ -20,6 +20,9 @@ export function ProductDialog({ product, store, busy, onClose, onAdd }: { produc
   const [error, setError] = useState('');
   const [added, setAdded] = useState(false);
   const variant = product.variants.find(v => v.id === variantId);
+  const details = Object.entries({ ...product.attributes, ...variant?.options }).filter(([key]) => !key.startsWith('photo_') && !key.startsWith('_'));
+  const photo = product.attributes;
+  const hasCredit = photo.photo_source?.startsWith('https://commons.wikimedia.org/wiki/File:') && photo.photo_license_url?.startsWith('https://creativecommons.org/');
   async function add() {
     if (!variant) return;
     setError(''); setAdded(false);
@@ -27,6 +30,18 @@ export function ProductDialog({ product, store, busy, onClose, onAdd }: { produc
     catch (e) { setError(errorMessage(e)); }
   }
   return <Dialog title={product.name} onClose={onClose} wide>
-    <div className="product-detail"><ProductArt slug={product.slug} name={product.name} image={product.image_urls[0]} /><div className="product-detail-copy"><span className="section-kicker">A closer look</span><h3>{product.name}</h3><p className="detail-price">{variant ? formatMoney(variant.price, store.currency) : 'Not available yet'}</p><p className="muted">{product.description || 'Explore the details and choose the option that suits you.'}</p>{product.variants.length > 0 && <label className="field">Choose your option<select value={variantId} onChange={e => { setVariantId(Number(e.target.value)); setAdded(false); }}>{product.variants.map(v => <option key={v.id} value={v.id}>{v.name}{!v.in_stock ? ' — unavailable' : ''}</option>)}</select></label>}<dl className="attributes">{Object.entries({ ...product.attributes, ...variant?.options }).map(([key, value]) => <div key={key}><dt>{key.replace(/_/g, ' ')}</dt><dd>{value}</dd></div>)}</dl><button className="button button-primary full-width" disabled={busy || !variant?.in_stock} onClick={() => void add()}><Icon name="bag" />{variant?.in_stock ? 'Add to bag' : 'Currently unavailable'}</button>{error && <p className="error-message" role="alert">{error}</p>}{added && <p className="success-message" role="status">Added to your bag.</p>}<p className="fine-print">Artwork is illustrative when a product photo is unavailable.</p></div></div>
+    <div className="product-detail">
+      <ProductArt slug={product.slug} name={product.name} image={product.image_urls[0]} />
+      <div className="product-detail-copy">
+        <span className="section-kicker">A closer look</span><h3>{product.name}</h3>
+        <p className="detail-price">{variant ? formatMoney(variant.price, store.currency) : 'Not available yet'}</p>
+        <p className="muted">{product.description || 'Explore the details and choose the option that suits you.'}</p>
+        {product.variants.length > 0 && <label className="field">Choose your option<select value={variantId} onChange={e => { setVariantId(Number(e.target.value)); setAdded(false); }}>{product.variants.map(v => <option key={v.id} value={v.id}>{v.name}{!v.in_stock ? ' — unavailable' : ''}</option>)}</select></label>}
+        <dl className="attributes">{details.map(([key, value]) => <div key={key}><dt>{key.replace(/_/g, ' ')}</dt><dd>{value}</dd></div>)}</dl>
+        <button className="button button-primary full-width" disabled={busy || !variant?.in_stock} onClick={() => void add()}><Icon name="bag" />{variant?.in_stock ? 'Add to bag' : 'Currently unavailable'}</button>
+        {error && <p className="error-message" role="alert">{error}</p>}{added && <p className="success-message" role="status">Added to your bag.</p>}
+        {hasCredit ? <p className="fine-print">Representative photo by {photo.photo_credit}. <a className="photo-credit-link" href={photo.photo_source} target="_blank" rel="noopener noreferrer">Source</a> · <a className="photo-credit-link" href={photo.photo_license_url} target="_blank" rel="noopener noreferrer">{photo.photo_license}</a>. Resized and converted to WebP; original license retained. <a className="photo-credit-link" href={`/photo-credits.html#${product.slug}`}>Full photo credits</a>.</p> : <p className="fine-print">Artwork is illustrative when a product photo is unavailable.</p>}
+      </div>
+    </div>
   </Dialog>;
 }

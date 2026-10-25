@@ -1,0 +1,122 @@
+{
+  "Kitchen": [
+    ["Wooden Spoon", "wooden spoon", "6.50"],
+    ["Steel Whisk", "kitchen whisk", "9.00"],
+    ["Kitchen Spatula", "kitchen spatula", "8.50"],
+    ["Rolling Pin", "rolling pin", "16.00"],
+    ["Cutting Board", "wooden cutting board", "24.00"],
+    ["Colander", "colander", "18.00"],
+    ["Mixing Bowl", "mixing bowl", "14.00"],
+    ["Measuring Cup", "measuring cup", "7.50"],
+    ["Mortar and Pestle", "mortar pestle kitchen", "28.00"],
+    ["Citrus Juicer", "citrus reamer", "12.00"]
+  ],
+  "Tableware": [
+    ["Ceramic Mug", "ceramic mug", "14.00"],
+    ["Tea Cup", "tea cup saucer", "12.00"],
+    ["Dinner Plate", "dinner plate", "15.00"],
+    ["Glass Tumbler", "drinking glass tumbler", "8.00"],
+    ["Glass Carafe", "glass carafe", "22.00"],
+    ["Teapot", "teapot", "32.00"],
+    ["Coffee Cup", "coffee cup", "11.00"],
+    ["Soup Bowl", "soup bowl", "13.00"],
+    ["Cutlery Set", "cutlery set", "25.00"],
+    ["Salt Shaker", "salt shaker", "7.00"]
+  ],
+  "Home": [
+    ["Pillar Candle", "pillar candle", "10.00"],
+    ["Woven Basket", "woven basket", "26.00"],
+    ["Glass Vase", "glass vase", "21.00"],
+    ["Table Lamp", "table lamp", "48.00"],
+    ["Wall Clock", "wall clock", "29.00"],
+    ["Throw Pillow", "throw pillow", "24.00"],
+    ["Cotton Towel", "cotton towel", "18.00"],
+    ["Ceramic Plant Pot", "ceramic flower pot", "17.00"],
+    ["Picture Frame", "empty picture frame", "16.00"],
+    ["Wooden Hanger", "wooden clothes hanger", "5.00"]
+  ],
+  "Stationery": [
+    ["Spiral Notebook", "spiral notebook", "8.00"],
+    ["Graphite Pencils", "graphite pencils", "6.00"],
+    ["Ballpoint Pen", "ballpoint pen", "4.00"],
+    ["Colored Pencils", "colored pencils", "14.00"],
+    ["Rubber Eraser", "rubber eraser", "2.50"],
+    ["Metal Ruler", "metal ruler", "5.00"],
+    ["Pencil Sharpener", "pencil sharpener", "4.50"],
+    ["Paper Clips", "paper clips", "3.00"],
+    ["Binder Clips", "binder clips", "4.00"],
+    ["Sticky Notes", "sticky notes", "4.50"]
+  ],
+  "Garden": [
+    ["Watering Can", "watering can", "23.00"],
+    ["Garden Trowel", "garden trowel", "12.00"],
+    ["Pruning Shears", "pruning shears", "25.00"],
+    ["Gardening Gloves", "gardening gloves", "11.00"],
+    ["Flower Seeds", "flower seeds packet", "3.50"],
+    ["Terracotta Pot", "terracotta flower pot", "9.00"],
+    ["Hand Rake", "hand garden rake", "13.00"],
+    ["Spray Bottle", "spray bottle", "6.00"],
+    ["Plant Labels", "plant labels", "5.50"],
+    ["Garden Twine", "garden twine", "7.00"]
+  ],
+  "Accessories": [
+    ["Canvas Tote", "canvas tote bag", "18.00"],
+    ["Cotton Scarf", "cotton scarf", "20.00"],
+    ["Wool Beanie", "knitted cap", "19.00"],
+    ["Straw Hat", "straw hat", "24.00"],
+    ["Leather Belt", "leather belt", "28.00"],
+    ["Sunglasses", "sunglasses white background", "22.00"],
+    ["Canvas Backpack", "backpack bag", "44.00"],
+    ["Umbrella", "umbrella white background", "25.00"],
+    ["Keyring", "keyring", "6.00"],
+    ["Coin Purse", "coin purse", "12.00"]
+  ],
+  "Sports": [
+    ["Yoga Mat", "yoga mat", "29.00"],
+    ["Tennis Ball", "tennis ball", "4.00"],
+    ["Football", "association football ball", "22.00"],
+    ["Basketball", "basketball ball", "25.00"],
+    ["Badminton Shuttlecock", "badminton shuttlecock", "6.00"],
+    ["Jump Rope", "jump rope", "12.00"],
+    ["Dumbbells", "dumbbells", "35.00"],
+    ["Resistance Band", "resistance band exercise", "14.00"],
+    ["Flying Disc", "flying disc frisbee", "10.00"],
+    ["Table Tennis Paddle", "table tennis racket", "16.00"]
+  ],
+  "Technology": [
+    ["Computer Mouse", "computer mouse", "19.00"],
+    ["USB Flash Drive", "USB flash drive", "12.00"],
+    ["Headphones", "headphones", "39.00"],
+    ["Keyboard", "computer keyboard", "34.00"],
+    ["Portable Speaker", "portable speaker", "45.00"],
+    ["USB Cable", "USB cable", "8.00"],
+    ["Desk Calculator", "desk calculator", "15.00"],
+    ["AA Batteries", "AA batteries", "6.00"],
+    ["LED Flashlight", "LED flashlight", "17.00"],
+    ["Camera Tripod", "camera tripod", "42.00"]
+  ],
+  "Personal Care": [
+    ["Bar Soap", "bar soap", "5.00"],
+    ["Toothbrush", "toothbrush", "4.00"],
+    ["Hair Comb", "hair comb", "6.00"],
+    ["Hair Brush", "hair brush", "12.00"],
+    ["Nail Clippers", "nail clippers", "7.00"],
+    ["Shaving Brush", "shaving brush", "18.00"],
+    ["Safety Razor", "safety razor", "29.00"],
+    ["Cotton Swabs", "cotton swabs", "3.50"],
+    ["Bath Sponge", "bath sponge", "6.50"],
+    ["Glass Perfume Bottle", "empty perfume bottle", "15.00"]
+  ],
+  "Pantry": [
+    ["Coffee Beans", "roasted coffee beans", "12.00"],
+    ["Black Tea", "black tea leaves", "9.00"],
+    ["Rolled Oats", "rolled oats", "5.00"],
+    ["White Rice", "white rice uncooked", "4.00"],
+    ["Red Lentils", "red lentils", "5.50"],
+    ["Almonds", "almonds nuts", "8.00"],
+    ["Walnuts", "walnuts nuts", "8.00"],
+    ["Honey", "honey jar", "10.00"],
+    ["Olive Oil", "olive oil bottle", "14.00"],
+    ["Cinnamon Sticks", "cinnamon sticks", "6.00"]
+  ]
+}

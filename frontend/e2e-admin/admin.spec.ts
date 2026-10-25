@@ -75,7 +75,7 @@ test('owner can manage orders and store settings; layout is accessible on mobile
   await login(page);
   await page.getByRole('button', { name: 'Orders', exact: true }).click();
   await page.getByRole('button', { name: /Open order/ }).first().click();
-  await expect(page.getByText('Fixture Guest', { exact: true })).toBeVisible();
+  await expect(page.getByRole('dialog').getByText('Fixture Guest', { exact: true })).toBeVisible();
   await page.getByLabel('Next order status').selectOption('confirmed');
   await page.getByRole('button', { name: 'Update order status' }).click();
   await expect(page.getByRole('dialog').getByRole('status')).toContainText('Order status updated');

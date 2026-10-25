@@ -295,6 +295,14 @@ input::placeholder, textarea::placeholder { color: #737188; }
 .error-screen { max-width: 620px; padding: 60px 24px; margin: 60px auto; }
 .error-screen h1 { margin-bottom: 20px; }
 .error-screen p { margin-bottom: 25px; }
+.demo-catalog-notice { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 17px; padding-block: 17px; font-size: 11px; color: #625677; border-bottom: 1px solid #ded7ec; }
+.demo-catalog-notice strong { font-weight: 600; color: var(--indigo); }
+.demo-catalog-notice a { display: inline-flex; align-items: center; gap: 6px; color: var(--indigo); margin-left: auto; }
+.demo-credits-footer { background: #eeecf6; text-align: center; padding: 16px 20px 23px; font-size: 11px; color: var(--muted); }
+.demo-credits-footer a { color: var(--indigo); text-decoration: underline; text-underline-offset: 3px; }
+.demo-credits-footer span { display: block; font-size: 10px; margin-top: 8px; }
+.chart-legend { max-height: 210px; overflow-y: auto; overscroll-behavior: contain; }
+.photo-credit-link { color: var(--indigo); text-decoration: underline; text-underline-offset: 3px; }
 
 @media (min-width: 1450px) {
   .hero { padding-block: 95px 90px; gap: 110px; }
