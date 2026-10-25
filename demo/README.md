@@ -2,7 +2,8 @@
 
 This branch, **`demo/general-store`**, starts from reusable backend/storefront/admin checkpoint
 **`e7dc132`** on `feature/reusable-fastapi-store`. Keep that base branch for stores without fixtures.
-Nothing has been pushed. The original prototypes and existing store database are unchanged.
+The original prototypes and existing store database are unchanged. See the root
+[feature overview](../README.md) for the available storefront and admin capabilities.
 
 The pinned catalog contains **100 products, 10 categories, and 10 products per category**: Kitchen,
 Tableware, Home, Stationery, Garden, Accessories, Sports, Technology, Personal Care, and Pantry.
